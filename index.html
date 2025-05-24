@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WE PAY THE MOST!</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff90;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .glow-button {
+      color: #00ff90;
+      font-size: 24px;
+      padding: 15px 30px;
+      background: transparent;
+      border: 2px solid #00ff90;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      transition: 0.3s ease-in-out;
+    }
+
+    .glow-button:hover {
+      background-color: #00ff90;
+      color: black;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 5px #00ff90, 0 0 10px #00ff90, 0 0 20px #00ff90;
+      }
+      50% {
+        box-shadow: 0 0 15px #00ff90, 0 0 30px #00ff90, 0 0 45px #00ff90;
+      }
+      100% {
+        box-shadow: 0 0 5px #00ff90, 0 0 10px #00ff90, 0 0 20px #00ff90;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>WE PAY THE MOST!</h1>
+  <a href="sms:5733824666&body=Hey%20Kody!%20Buy%20my%20car.">
+    <button class="glow-button">TEXT KODY NOW</button>
+  </a>
+</body>
+</html>
